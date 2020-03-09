@@ -1,2 +1,3 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml123</text>
+<text>微信小程序开发</text>
+<button size="mini">按钮</button>
