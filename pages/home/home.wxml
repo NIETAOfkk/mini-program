@@ -1,3 +1,12 @@
 <!--pages/home/home.wxml-->
-<text>微信小程序开发</text>
-<button size="mini">按钮</button>
+<text>{{name}}</text>
+<view>今年：{{age}}</view>
+
+<!-- 数据循环 -->
+<view wx:for="{{students}}">{{item}}</view>
+
+<!-- 数据绑定 -->
+<view>当前计数：{{counter}}</view>
+<button size="mini" bindtap="upBtnClick">+</button>
+<button size="mini" bindtap="downBtnClick">-</button>
+

@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    name: "taotao",
+    age: 20,
+    students: [
+      "小明","小红","小可"
+    ],
+    counter: 0
   },
 
   /**
@@ -62,5 +67,16 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  upBtnClick() {
+    this.setData({
+      counter: this.data.counter + 1
+    })
+  },
+  downBtnClick() {
+    this.setData({
+      counter: this.data.counter - 1
+    })
   }
 })

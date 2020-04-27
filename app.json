@@ -3,5 +3,25 @@
     "pages/home/home",
     "pages/about/about"
   ],
-  "sitemapLocation": "sitemap62.json"
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "涛涛小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于"
+      }
+    ]
+  }
 }
