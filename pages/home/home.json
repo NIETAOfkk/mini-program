@@ -1,4 +1,8 @@
 {
-  "usingComponents": {},
-  "navigationBarTextStyle": "black"
+  "usingComponents": {
+    "w-goodsList": "/components/w-goodslist/w-goodslist",
+    "my-cpn": "/components/my-cpn/my-cpn"
+  },
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "购物街"
 }

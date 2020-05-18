@@ -1,2 +1,21 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<text>pages/about/about.wxml \n</text>
+
+<text selectable>长按可选中 \n</text>
+<text selectable="{{true}}">长按可选中 \n</text>
+
+<!-- 决定空格大小 -->
+<text space="nbsp">hello word \n</text>
+
+<text decode>5 &gt; 3</text>
+
+<!-- 使用自定义组件 -->
+<!-- 组件传值 -->
+<my-cpn title="组件传值"/>
+<my-cpn />
+<view>{{number}}</view>
+<cpn bind:increamentData="increamentData"/>
+
+<!-- 修改组件内数据 -->
+<button size="mini" bindtap="incre">修改组件内部数据</button>
+<cpn id="cpn" />

@@ -1,17 +1,26 @@
-// pages/about/about.js
+// pages/detail/detail.js
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    number: 0
+    message: "学习小程序",
+    firstname: "kobe",
+    lastname: "Bryant",
+    age: 41,
+    nowtime: new Date().toLocaleString(),
+    isShow: false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    setInterval(() => {
+      this.setData({
+        nowtime: new Date().toLocaleString()
+      })
+    },1000)
   },
 
   /**
@@ -62,17 +71,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-  increamentData(event) {
-    console.log("-----外部", event)
+  switchColor() {
     this.setData({
-      number: this.data.number + 1
+      isShow: !this.data.isShow
     })
-  },
-  incre() {
-    // 获取组件对象
-    const cpnSel = this.selectComponent("#cpn")
-
-    console.log(cpnSel)
-    cpnSel.inc(10)
   }
 })

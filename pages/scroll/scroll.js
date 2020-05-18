@@ -1,10 +1,11 @@
-// pages/about/about.js
+// pages/scroll/scroll.js
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
-    number: 0
+
   },
 
   /**
@@ -62,17 +63,14 @@ Page({
   onShareAppMessage: function () {
 
   },
-  increamentData(event) {
-    console.log("-----外部", event)
-    this.setData({
-      number: this.data.number + 1
-    })
-  },
-  incre() {
-    // 获取组件对象
-    const cpnSel = this.selectComponent("#cpn")
 
-    console.log(cpnSel)
-    cpnSel.inc(10)
+  scrolltolower () {
+    console.log("输出距离底部的距离！")
+  },
+
+  scrollLister(event) {
+    console.log(event)
   }
+
+
 })

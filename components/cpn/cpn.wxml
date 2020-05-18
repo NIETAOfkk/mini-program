@@ -1,0 +1,4 @@
+<!--components/cpn/cpn.wxml-->
+<view>{{num}}</view>
+<text style="font-size: 32px; color: purple">这是全局组件</text>
+<button size="mini" style="margin-left: 20px;" bind:tap="increament">把事件发送出去</button>

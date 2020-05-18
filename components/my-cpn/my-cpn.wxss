@@ -1,0 +1,14 @@
+/* components/my-cpn/my-cpn.wxss */
+.backtop{
+  width: 100rpx;
+  height: 100rpx;
+  background: orange;
+  border-radius: 50%;
+  font-size: 30rpx;
+  color: red;
+  position: fixed;
+  right: 100rpx;
+  bottom: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}

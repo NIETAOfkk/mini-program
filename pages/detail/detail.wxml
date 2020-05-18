@@ -1,0 +1,13 @@
+<!--pages/detail/detail.wxml-->
+<text style="font-size: 32px">mustache语法演练</text>
+<view>{{message}}</view>
+<view>{{firstname}} {{lastname}}</view>
+<view>{{firstname + ' ' + lastname}}</view>
+<view>{{age > 18 ? "他是一个伟大的男人" : "他还是孩子"}}</view>
+<view>{{nowtime}}</view>
+<button size="mini" bindtap="switchColor">切换颜色</button>
+<view class="{{isShow ? 'active' : ''}}">科比喜欢打球</view>
+
+
+
+

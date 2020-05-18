@@ -1,0 +1,17 @@
+/* components/w-goodslist/w-goodslist.wxss */
+.goodsList{
+  display: flex;
+  margin-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+
+.goods_item{
+  flex: 1;
+  text-align: center;
+}
+
+.goodsActive{
+  color: #ff5777;
+  padding-bottom: 16rpx;
+  border-bottom: 4rpx solid #ff5777;
+}

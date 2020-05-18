@@ -1,12 +1,41 @@
-<!--pages/home/home.wxml-->
-<text>{{name}}</text>
-<view>今年：{{age}}</view>
+<!-- pages/home/home.wxml
+<!-- 轮播图 -->
+<swiper circular autoplay interval="3000" duration="300" indicator-dots indicator-active-color="#ffff" class="w_swiper">
+  <block wx:for="{{ banners }}" wx:key="{{ index }}">
+    <swiper-item>
+      <image src="{{item.image}}" mode="widthFix" />
+    </swiper-item>
+  </block>
+</swiper>
 
-<!-- 数据循环 -->
-<view wx:for="{{students}}">{{item}}</view>
+<!-- 推荐列表 -->
+<view class="recommends">
+  <block wx:for="{{recommends}}" wx:key="{{index}}">
+    <view class="recommends-item">
+      <image src="{{item.image}}" />
+      <view>{{item.title}}</view>
+    </view>
+  </block>
+</view>
 
-<!-- 数据绑定 -->
-<view>当前计数：{{counter}}</view>
-<button size="mini" bindtap="upBtnClick">+</button>
-<button size="mini" bindtap="downBtnClick">-</button>
+<!-- 本周流行 -->
+<view class="popular">本周流行</view>
+<view class="weekPop">
+  <block wx:for="{{popular}}" wx:key="{{index}}">
+    <view class="weekitem">{{item}}</view>
+  </block>
+</view>
 
+<!-- 商品列表tab切换栏 -->
+<w-goodsList class="goodsL" currentL="{{currentSel}}" bind:switchT="switchTab" />
+<view class="goods">
+  <block wx:for="{{goods.pop.page}}" wx:key="{{index}}">
+    <view class="goods-item">
+      <view>{{item}}</view>
+      <text>学习小程序</text>
+    </view>
+  </block>
+</view>
+
+<!--回到顶部按钮  -->
+<my-cpn backT="{{backTop}}" bind:backT="backTopE"/>

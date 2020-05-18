@@ -1,0 +1,5 @@
+/* pages/detail/detail.wxss */
+.active{
+  color: red;
+  font-size: 28px;
+}

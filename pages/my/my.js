@@ -1,10 +1,11 @@
-// pages/about/about.js
+// pages/my/my.js
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
-    number: 0
+
   },
 
   /**
@@ -61,18 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  increamentData(event) {
-    console.log("-----外部", event)
-    this.setData({
-      number: this.data.number + 1
-    })
-  },
-  incre() {
-    // 获取组件对象
-    const cpnSel = this.selectComponent("#cpn")
-
-    console.log(cpnSel)
-    cpnSel.inc(10)
   }
 })
